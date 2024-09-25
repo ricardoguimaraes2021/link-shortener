@@ -69,23 +69,12 @@ This is a simple URL shortener application built with Node.js, Express, and Mong
 
 ## Future Task
 
-- **Getting this work online**:
-  The next step is to deploy this project to a live server so it can be accessed online. Some popular options are:
-  - **Heroku**: A free and easy platform to deploy Node.js apps.
-  - **Vercel**: Great for serverless deployments and static sites.
-  - **AWS/Google Cloud/DigitalOcean**: For more control over the infrastructure.
-  - **MongoDB Atlas**: To host the MongoDB database in the cloud, if you're currently using a local database.
+- **Online Setup**:
+  The next step is to deploy this project to a live server so it can be accessed online.
 
 Once the app is deployed, update the MongoDB connection string in the `.env` file to point to your online MongoDB instance (e.g., MongoDB Atlas).
 
 ---
-
-## Contributing
-
-Feel free to submit issues or pull requests. Any feedback or contributions to improve the project are welcome!
-
----
-
 ## License
 
 This project is open-source and available under the [MIT License](LICENSE).
