@@ -73,8 +73,3 @@ This is a simple URL shortener application built with Node.js, Express, and Mong
   The next step is to deploy this project to a live server so it can be accessed online.
 
 Once the app is deployed, update the MongoDB connection string in the `.env` file to point to your online MongoDB instance (e.g., MongoDB Atlas).
-
----
-## License
-
-This project is open-source and available under the [MIT License](LICENSE).
