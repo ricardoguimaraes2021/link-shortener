@@ -1,6 +1,6 @@
 // Load environment variables from .env file
 require('dotenv').config();
-
+const path = require('path');  // Import the path module
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
@@ -15,6 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Serve static files from the 'public' directory
 app.use(express.static(path.join(__dirname, 'public')));
+
 
 // Check if MongoDB URI is loaded correctly from the .env file
 console.log('MongoDB URI:', process.env.MONGO_URI);
