@@ -72,11 +72,20 @@
 
       const data = await response.json();
 
+      // Dynamically update the base URL depending on the environment (localhost or production)
+      const baseUrl = window.location.origin.includes('localhost')
+        ? 'http://localhost:5001'
+        : 'https://link-shortener-nine-flax.vercel.app';
+
       // Display the shortened URL
-      const shortenedUrlDiv = document.getElementById('shortenedUrl');
-      shortenedUrlDiv.innerHTML = `
-        <p>Shortened URL: <a href="/${data.shortUrl}" target="_blank">${window.location.origin}/${data.shortUrl}</a></p>
-      `;
+      if (data.shortUrl) {
+        const shortenedUrlDiv = document.getElementById('shortenedUrl');
+        shortenedUrlDiv.innerHTML = `
+          <p>Shortened URL: <a href="${baseUrl}/${data.shortUrl}" target="_blank">${baseUrl}/${data.shortUrl}</a></p>
+        `;
+      } else {
+        alert('Failed to shorten the URL. Please try again.');
+      }
     }
   </script>
 </body>
