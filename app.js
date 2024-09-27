@@ -13,8 +13,8 @@ const PORT = process.env.PORT || 5001;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Serve static files (for frontend)
-app.use(express.static('public'));
+// Serve static files from the 'public' directory
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Check if MongoDB URI is loaded correctly from the .env file
 console.log('MongoDB URI:', process.env.MONGO_URI);
