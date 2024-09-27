@@ -9,6 +9,7 @@ This is a simple URL shortener application built with Node.js, Express, and Mong
 - Track how many times a shortened URL is clicked
 - Simple front-end interface to input URLs and receive shortened links
 - Uses MongoDB for storing original and shortened URLs
+- Deployed on Vercel for easy access
 
 ## Project Structure
 
@@ -38,7 +39,7 @@ This is a simple URL shortener application built with Node.js, Express, and Mong
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/link-shortener.git
+   git clone https://github.com/ricardoguimaraes2021/link-shortener.git
    ```
 
 2. Navigate to the project folder:
@@ -67,9 +68,23 @@ This is a simple URL shortener application built with Node.js, Express, and Mong
 
 6. Visit `http://localhost:5001` in your browser to access the URL shortener.
 
+## Deployment on Vercel
+
+The application is deployed on Vercel. You can access it live at the following URL:
+
+**[URL Shortener on Vercel](https://link-shortener-nine-flax.vercel.app/)**
+
+
 ## Future Task
 
-- **Online Setup**:
-  The next step is to deploy this project to a live server so it can be accessed online.
+- Further improvements could include adding analytics on how many times each shortened URL is clicked or adding user authentication.
 
-Once the app is deployed, update the MongoDB connection string in the `.env` file to point to your online MongoDB instance (e.g., MongoDB Atlas).
+## Contributing
+
+Feel free to submit issues or pull requests. Any feedback or contributions to improve the project are welcome!
+
+---
+
+## License
+
+This project is open-source and available under the [MIT License](LICENSE).
